@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 .expense-item {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
     margin: 1rem 0;
-    background-color: #4b4b4b;
+    border-radius: 20px;
+    background: rgba(236, 236, 222, 0.9);
+    box-shadow: 4px 4px 4px 0px rgba(35, 35, 35, 0.2);
 }
 
 .expense-item__description {
@@ -17,23 +22,33 @@
     flex: 1;
 }
 
-.expense-item h2 {
-    color: #3a3a3a;
-    font-size: 1rem;
-    flex: 1;
-    margin: 0 1rem;
-    color: white;
+.expense-item__description h2 {
+    color: rgba(35, 35, 35, 1);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.expense-item__description p {
+    font-size: 0.5rem;
+    font-weight: normal;
+    color: rgba(35, 35, 35, 1);
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
 }
 
 .expense-item__price {
+    color: rgba(35, 35, 35, 1);
+    font-family: "Montserrat", "sans-serif";
+    font-style: normal;
     font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #40005d;
-    border: 1px solid white;
-    padding: 0.5rem;
-    border-radius: 12px;
+    font-weight: 400;
+    margin: 2vh;
+    justify-content: space-around;
+    align-content: space-around;
 }
+
+
 
 @media (min-width: 580px) {
     .expense-item__description {
@@ -47,8 +62,11 @@
         font-size: 1.25rem;
     }
 
+    .expense-item__description p {
+        font-size: 0.75rem;
+    }
+
     .expense-item__price {
         font-size: 1.25rem;
-        padding: 0.5rem 1.5rem;
     }
 }
