@@ -1,0 +1,16 @@
+.expense-item {
+    display: block;
+    border: 1px solid darkgray;
+}
+
+.expense-item__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.expense-item__price{
+    margin-left: auto;
+    border: 1px solid darkgray;
+    background-color: darkgray;
+}
